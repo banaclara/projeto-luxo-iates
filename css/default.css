@@ -10,6 +10,7 @@
     --box: #21272bc9;
     --lightblue: #1bb4e8;
     --ocher: #c6b07f;
+    --footer: #CBCFD3;
     --pagefont: 'Open Sans', sans-serif;
 }
 
@@ -22,10 +23,14 @@
 
 body {
     background-color: var(--background);
-    width: 980px;
     height: auto;
     margin: 0 auto;
     font-family: var(--pagefont);
+}
+
+.page {
+    margin: 0 auto;
+    width: 980px;
 }
 
 /* header */
@@ -111,7 +116,7 @@ main {
 }
 
 .bgtitle {
-    background: url(images/header.jpg);
+    background: url(../images/header.jpg);
     background-size: cover;
     padding-top: 355px;
     filter: brightness(0.25) opacity(0.75);
@@ -283,6 +288,15 @@ main {
     font: italic 400 1.2em var(--pagefont);
 }
 
+/* tripulação */
+
+.trip {
+    margin: 0 50px;
+    padding-bottom: 40px;
+    text-indent: 15px;
+    line-height: 1.5em;
+}
+
 /* contato */
 
 form {
@@ -345,6 +359,14 @@ textarea {
 /* footer */
 
 footer {
-    font-size: 0.7em;
-    padding: 20px 0 30px 20px;
+    font-size: 0.75em;
+    background-color: var(--footer);
+}
+
+footer p {
+    width: 980px;
+    padding: 25px 0;
+    background-color: var(--background);
+    margin: 0 auto;
+    text-indent: 15px;
 }
